@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 5 Best New Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        /* Container using CSS Grid for responsiveness */
+        .movie-grid {
+            display: grid;
+            gap: 30px;
+            justify-items: center;
+        }
+
+        /* DEFAULT: Mobile View (< 601px) - 1 Column */
+        @media (max-width: 600px) {
+            .movie-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* TABLET VIEW: (601px - 900px) - 2 Columns */
+        @media (min-width: 601px) and (max-width: 900px) {
+            .movie-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* DESKTOP VIEW: (> 900px) - 3 Columns */
+        @media (min-width: 901px) {
+            .movie-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Movie Card Styling */
+        .movie-card {
+            text-align: left;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .links a {
+            display: block;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 0.9em;
+            word-wrap: break-word;
+        }
+
+        .youtube-info {
+            margin-top: 10px;
+            font-size: 0.85em;
+            display: flex;
+            align-items: center;
+        }
+
+        .youtube-icon {
+            width: 20px !important;
+            margin-right: 5px;
+            border: none !important;
+        }
+        .trailer-link {
+            text-decoration: none; 
+            color: #333;           
+            display: flex;
+            align-items: center;
+            font-size: 0.85em;
+        }
+
+        .trailer-link:hover {
+            text-decoration: underline;
+            color: #ff0000;         
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The 5 Best New Movies</h1>
+
+    <div class="movie-grid">
+        
+        <div class="movie-card">
+            <h3>1. The Fantastic Four: First Steps</h3>
+            <img src="images/Fantastic.jpg" alt="The Fantastic Four: First Steps">
+            <div class="links">
+                <a href="https://www.primevideo.com/detail/The-Fantastic-Four-First-Steps/0LOERJPS7SZZLQ1XWVX2Q3DSDY">https://www.primevideo.com/detail/The-Fantastic-Four-First-Steps/0LOERJPS7SZZLQ1XWVX2Q3DSDY</a>
+                <a href="https://www.imdb.com/title/tt10676052/">https://www.imdb.com/title/tt10676052/</a>
+            </div>
+            <div class="youtube-info">
+                <a href="https://www.youtube.com/watch?v=18QQWa5MEcs" target="_blank" class="trailer-link">
+                <img src="images/youtube logo.jpg" class="youtube-icon" alt="youtube logo"> The Fantastic Four: First Steps | Vanessa Kirby&Sue Storm | Official Trailer | Netflix </a>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <h3>2. Thunderbolts*</h3>
+            <img src="images/Thunderbolts.jpg" alt="Thunderbolts*">
+            <div class="links">
+                <a href="https://www.primevideo.com/detail/Thunderbolts/0NHFIZLPDPLA503QCNMNCWG0LH">https://www.primevideo.com/detail/Thunderbolts/0NHFIZLPDPLA503QCNMNCWG0LH</a>
+                <a href="https://www.imdb.com/title/tt20969586/">https://www.imdb.com/title/tt20969586/</a>
+            </div>
+            <div class="youtube-info">
+                <a href="https://www.youtube.com/watch?v=-sAOWhvheK8" target="_blank" class="trailer-link">
+                <img src="images/youtube logo.jpg" class="youtube-icon" alt="youtube logo"> Thunderbolts* | Florence Pugh, Yelena Belova, Sebastian Stan, Bucky Barnes | Official Trailer </a>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <h3>3. Another Simple Favor</h3>
+            <img src="images/Another.jpg" alt="Another Simple Favor">
+            <div class="links">
+                <a href="https://www.primevideo.com/detail/Warfare/0GH3IHI70AG4KX6YAW765WP4Z3">https://www.primevideo.com/detail/Warfare/0GH3IHI70AG4KX6YAW765WP4Z3</a>
+                <a href="https://www.imdb.com/title/tt10676052/">https://www.imdb.com/title/tt10676052/</a>
+            </div>
+            <div class="youtube-info">
+                <a href="https://www.youtube.com/watch?v=QWajCwdC_TM" target="_blank" class="trailer-link">
+                <img src="images/youtube logo.jpg" class="youtube-icon" alt="youtube logo"> Another Simple Favor | Blake Lively, Emily Nelson ; Anna Kendrick| Official Trailer | Netflix </a>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <h3>4. Predator: Badlands</h3>
+            <img src="images/Predator.jpg" alt="Predator: Badlands">
+            <div class="links">
+                <a href="https://www.primevideo.com/detail/Predator-Badlands/0QCXJW221UHHU5S6GFFYTJ154I">https://www.primevideo.com/detail/Predator-Badlands/0QCXJW221UHHU5S6GFFYTJ154I</a>
+                <a href="images/youtube logo.jpg">https://www.imdb.com/title/tt31227572/</a>
+            </div>
+            <div class="youtube-info">
+                <a href="https://www.youtube.com/watch?v=43R9l7EkJwE" target="_blank" class="trailer-link">
+                <img src="images/youtube logo.jpg" class="youtube-icon" alt="youtube logo"> One Of Them Days | John Davis, Brent O'Connor | Official Trailer | Netflix </a>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <h3>5. The Smashing Machine</h3>
+            <img src="images/Smashing.jpg" alt="The Smashing Machine">
+            <div class="links">
+                <a href="https://www.primevideo.com/detail/The-Smashing-Machine/0O5H42YSI009WAUWAF3GEQ5YUZ">https://www.primevideo.com/detail/The-Smashing-Machine/0O5H42YSI009WAUWAF3GEQ5YUZ</a>
+                <a href="https://www.imdb.com/title/tt11214558/">https://www.imdb.com/title/tt11214558/</a>
+            </div>
+            <div class="youtube-info">
+                <a href="https://www.youtube.com/watch?v=18QQWa5MEcs" target="_blank" class="trailer-link">
+                <img src="images/youtube logo.jpg" class="youtube-icon" alt="youtube logo"> The Fantastic Four: First Steps | Dwayne Johnson, Mark Kerr, Emily Blunt | Official Trailer | Netflix </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
